@@ -6,10 +6,10 @@ import {
   mkdir, writeFile, stat, existsSync, realpath,
 } from 'fs';
 import { join as joinPath } from 'path';
-import { Request, Response } from 'express';
+//import { Request, Response } from 'express';
 import { contentType } from 'mime-types';
 import mongoDBCore from 'mongodb/lib/core';
-import dbClient from '../utils/db';
+import { dbClient } from '../utils/db';
 import { getUserFromXToken } from '../utils/auth';
 
 const VALID_FILE_TYPES = {
